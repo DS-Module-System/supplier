@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% import 'core/default_templates/form_search.html.twig' as form_search %}
+{% import 'core/default_templates/data_table_macro.html.twig' as data_table %}
+
+{% block body %}
+
+    {{ form_search.form_search(form, ["name", "eek", "vat", "responsiblePerson", "email", "phone"]) }}
+
+    {{ data_table.table(rows, {
+        "newLink": data_table.new_btn('supplier_create'),
+        "cols" : {
+            "tableAction": {
+                "label": "core.module.actionTitle",
+                "edit": path('supplier_edit', {"id": -1}),
+            },
+            "name": {
+                "label": "supplier.name",
+            },
+            "eek": {
+                "label": "supplier.eek",
+            },
+            "vat": {
+                "label": "supplier.vat",
+            },
+            "responsiblePerson": {
+                "label": "supplier.responsiblePerson",
+            },
+            "email": {
+                "label": "supplier.email",
+            },
+        }
+    }) }}
+
+{% endblock %} 

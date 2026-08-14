@@ -1,0 +1,20 @@
+# Supplier controller translations
+leftMenu.suppliers: 'Suppliers'
+# Page titles
+createSupplierTitle: 'Create Supplier'
+editSupplierTitle: 'Edit Supplier'
+
+# Form fields
+supplierNumber: 'Supplier Number'
+name: 'Name'
+countryCode: 'Country Code'
+eek: 'EIK'
+vat: 'VAT Number'
+responsiblePerson: 'Responsible Person'
+email: 'Email'
+phone: 'Phone'
+address: 'Address'
+
+# Buttons
+getCompanyData: 'Get Company Data'
+add.form: 'Add Supplier' 

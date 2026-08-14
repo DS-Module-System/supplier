@@ -1,0 +1,15 @@
+{% import 'core/default_templates/form_table_macro.html.twig' as form_table %}
+
+<div class="mt-3 mb-2 {% if not form.vars.valid %}was-validated{% endif %}">
+    {% include 'core/default_templates/form_main_error.html.twig' %}
+    {{ form_table.tr(form.supplierNumber) }}
+    {{ form_table.tr(form.name) }}
+    {{ form_table.tr(form.countryCode) }}
+    {{ form_table.tr(form.eek) }}
+    <div class="mb-3"><button type="button" id="getCompanyData" class="btn btn-sm btn-secondary" data-url="{{ path('supplier_api_supplier_get_company_data') }}">{{ 'supplier.getCompanyData'|dtrans }}</button></div>
+    {{ form_table.tr(form.vat) }}
+    {{ form_table.tr(form.responsiblePerson) }}
+    {{ form_table.tr(form.email) }}
+    {{ form_table.tr(form.phone) }}
+    {{ form_table.tr(form.address) }}
+</div> 

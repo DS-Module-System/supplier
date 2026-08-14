@@ -1,0 +1,20 @@
+# Supplier controller translations
+leftMenu.suppliers: 'Доставчици'
+# Page titles
+createSupplierTitle: 'Създаване на доставчик'
+editSupplierTitle: 'Редактиране на доставчик'
+
+# Form fields
+supplierNumber: 'Номер на доставчик'
+name: 'Име'
+countryCode: 'Код на държава'
+eek: 'ЕИК'
+vat: 'ДДС номер'
+responsiblePerson: 'Отговорно лице'
+email: 'Имейл'
+phone: 'Телефон'
+address: 'Адрес'
+
+# Buttons
+getCompanyData: 'Вземи данни за компанията'
+add.form: 'Добавяне на доставчик' 
